@@ -17,6 +17,6 @@ nosebug is written in vanilla JavaScript with no dependencies.
 - Have fun.
 
 ###Browser Support
-Tested in Chrome 34, Firefox 28, and IE11.
+Tested in Chrome 34, Firefox 28, and IE8+.
 
 [Test it in your browser.](https://dl.dropboxusercontent.com/u/24981817/nosebug/test.html)
