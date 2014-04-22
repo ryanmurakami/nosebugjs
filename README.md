@@ -11,8 +11,8 @@ By focusing on convention, nosebug can be much smaller and "just work." In other
 ###Usage
 nosebug is written in vanilla JavaScript with no dependencies. 
 
-- Include nosebug.min.js at the beginning of your html.
-- Place the template for that file in the Templates file.
+- Include nosebug.min.js in your html (Ideally at the end of your HTML before your other application JavaScript).
+- Place the template for that file in the Template folder.
 - Name the template file: &lt;name of html file&gt;Template.hbs
 - Have fun.
 
