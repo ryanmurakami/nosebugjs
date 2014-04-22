@@ -7,8 +7,11 @@
 	//get file
 	var req = new XMLHttpRequest();
 	req.open('GET', 'Template/' + templ, true);
-	req.onload = function() {
-		document.getElementsByTagName('body')[0].innerHTML += req.responseText;
+	req.onreadystatechange = function() {
+	        if (req.readyState == 4) {
+	            if(req.status == 200)
+	                document.getElementsByTagName('body')[0].innerHTML += req.responseText;
+	        }
 	}
 	req.send();
 })();
