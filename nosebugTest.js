@@ -5,12 +5,20 @@ function assertTag(tagName) {
 		return false;
 }	
 
-setTimeout(function() {
+function testState() {
 	if(assertTag('testOne') &&
 		assertTag('testTwo') &&
-		assertTag('testThree'))
-		//document.write('All tests passed');
+		assertTag('testThree') &&
+		window.nosebug.ready)
 		document.getElementById('testSuccess').style.display = '';
 	else
 		document.write('You dun goofed');
-}, 3000);
+}
+
+if(!window.nosebug.ready) {
+	document.addEventListener('nosebug', function() {
+		testState();
+	});
+} else {
+	testState();
+}
