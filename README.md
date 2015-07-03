@@ -1,4 +1,4 @@
-nosebug.js
+nosebug v0.2
 =========
 
 A micro-Handlebars template loader.
@@ -12,6 +12,7 @@ nosebug is written in vanilla JavaScript with no dependencies.
 - Include nosebug.min.js in your html
 - Place the template for that file in the Template folder
 - Name the template file: &lt;name of html file&gt;Template.hbs
+- Listen for the 'nosebug' event or check nosebug.ready before using the template
 - Have fun!
 
 ###Browser Support
